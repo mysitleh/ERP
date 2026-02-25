@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1: Pengantar ERP | ERP Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="navbar glass sticky-top">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">ERP</span> Portal
+            </a>
+            <div class="nav-links desktop-only">
+                <a href="index.html" class="nav-item">Syllabus</a>
+                <a href="absensi.html" class="btn btn-primary">Absensi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="materi-hero text-center animate-up">
+            <span class="badge">Pertemuan 01</span>
+            <h1 style="font-size: 3.5rem; margin: 1.5rem 0; line-height: 1.1;">Pengantar ERP untuk <br><span
+                    class="gradient-text">Bisnis Digital</span></h1>
+            <p class="subtitle" style="margin: 0 auto; max-width: 700px; font-size: 1.2rem;">Bagaimana sistem
+                terintegrasi menjadi fondasi utama dalam ekosistem ekonomi digital modern.</p>
+        </div>
+
+        <article class="article-content animate-up delay-1">
+
+            <!-- SECTION 1 -->
+            <section class="materi-section">
+                <h2>1. Apa Itu ERP? — Penjelasan Sederhana</h2>
+                <p><strong>Enterprise Resource Planning (ERP)</strong> adalah sistem perangkat lunak terintegrasi yang
+                    menyatukan seluruh proses bisnis sebuah organisasi ke dalam satu platform tunggal. Bayangkan ERP
+                    sebagai <em>"otak pusat"</em> perusahaan yang mengoordinasikan semua divisi agar saling terhubung
+                    secara otomatis.</p>
+
+                <div class="card glass" style="margin: 24px 0;">
+                    <p style="margin: 0; font-style: italic; color: var(--text-muted);">"Tanpa ERP, setiap divisi
+                        bekerja dengan sistem masing-masing. Dengan ERP, semua divisi bekerja di satu sistem yang sama —
+                        data real-time, keputusan lebih cepat."</p>
+                </div>
+
+                <h3 style="margin: 24px 0 12px; color: var(--text-light);">Analogi Mudah: ERP seperti WhatsApp Group
+                    Perusahaan</h3>
+                <p>Bayangkan perusahaan tanpa ERP itu seperti karyawan yang hanya bisa SMS satu per satu — informasi
+                    lambat, sering salah, dan tidak sinkron. ERP itu seperti satu WhatsApp Group yang berisi semua
+                    divisi: pesan terkirim serentak, semua tahu status terbaru, dan tidak perlu tanya ulang.</p>
+
+                <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--text-muted); flex-shrink: 0;">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                            <strong style="color: var(--primary-light);">Dengan ERP</strong>
+                        </div>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+                            <li>Data terpusat dan real-time</li>
+                            <li>Proses otomatis antar divisi</li>
+                            <li>Laporan akurat dan cepat</li>
+                        </ul>
+                    </div>
+                    <div class="card glass" style="padding: 20px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--text-muted); flex-shrink: 0;">
+                                <path
+                                    d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z" />
+                            </svg>
+                            <strong style="color: var(--secondary);">Tanpa ERP</strong>
+                        </div>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem;">
+                            <li>Data tersebar di banyak file</li>
+                            <li>Proses manual, rawan salah</li>
+                            <li>Laporan lambat dan tidak akurat</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section class="materi-section">
+                <h2>2. Evolusi ERP — Dari Pabrik ke Cloud</h2>
+                <p>ERP tidak muncul tiba-tiba. Ia berkembang selama puluhan tahun seiring kebutuhan bisnis:</p>
+
+                <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
+                    <div class="feature-card glass"
+                        style="padding: 20px; display: flex; gap: 16px; align-items: start;">
+                        <div class="icon-box" style="color: var(--text-muted);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); margin-bottom: 4px;">1960-an — MRP (Material
+                                Requirement Planning)</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Fokus pada perencanaan
+                                bahan baku. Hanya digunakan di pabrik manufaktur besar.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card glass"
+                        style="padding: 20px; display: flex; gap: 16px; align-items: start;">
+                        <div class="icon-box" style="color: var(--text-muted);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); margin-bottom: 4px;">1990-an — ERP (Enterprise Resource
+                                Planning)</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Meluas ke keuangan, HR,
+                                distribusi. SAP dan Oracle mulai mendominasi. Server on-premise mahal.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card glass"
+                        style="padding: 20px; display: flex; gap: 16px; align-items: start; border: 1px solid rgba(99, 102, 241, 0.2);">
+                        <div class="icon-box" style="color: var(--primary-light);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-light); margin-bottom: 4px;">2010-an — Cloud ERP & SaaS</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Diakses via browser,
+                                bayar berlangganan, tanpa serverda lokal. Cocok untuk UMKM dan startup. Contoh: Odoo,
+                                ERPNext, Jurnal.id.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section class="materi-section">
+                <h2>3. Mengapa Bisnis Digital Butuh ERP?</h2>
+                <p>Di era digital, bisnis tidak hanya menjual — mereka mengelola website, marketplace, media sosial,
+                    pengiriman, dan keuangan secara bersamaan. Tanpa sistem terpadu, kekacauan mudah terjadi:</p>
+
+                <div class="feature-card glass" style="margin-bottom: 1.5rem;">
+                    <div style="padding: 24px; display: flex; gap: 16px; align-items: start;">
+                        <div class="icon-box" style="color: var(--accent);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent); margin-bottom: 8px;">Single Source of Truth</h4>
+                            <p>Semua divisi melihat data yang sama secara real-time. Tidak ada lagi perbedaan stok
+                                antara admin gudang dan website. Data pelanggan konsisten di semua kanal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card glass" style="margin-bottom: 1.5rem;">
+                    <div style="padding: 24px; display: flex; gap: 16px; align-items: start;">
+                        <div class="icon-box" style="color: var(--primary-light);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--primary-light); margin-bottom: 8px;">Scalability (Kemampuan Tumbuh)
+                            </h4>
+                            <p>Sistem Cloud ERP memungkinkan bisnis berkembang dari 100 transaksi/hari menjadi 100.000
+                                tanpa harus merombak infrastruktur dari nol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card glass" style="margin-bottom: 1.5rem;">
+                    <div style="padding: 24px; display: flex; gap: 16px; align-items: start;">
+                        <div class="icon-box" style="color: var(--text-muted);">
+                            <svg class="icon-lg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--text-light); margin-bottom: 8px;">Keputusan Berbasis Data</h4>
+                            <p>Dengan dashboard real-time, pemilik bisnis bisa langsung melihat produk mana yang laris,
+                                kapan stok menipis, atau berapa margin keuntungan bulan ini — tanpa harus menunggu
+                                laporan manual.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: FITUR-FITUR / MODUL ERP -->
+            <section class="materi-section">
+                <h2>4. Fitur-Fitur Utama (Modul) ERP</h2>
+                <p>ERP terdiri dari beberapa <strong>modul</strong> yang masing-masing menangani satu fungsi bisnis.
+                    Modul-modul ini saling terhubung dan berbagi data secara otomatis. Berikut adalah modul-modul utama
+                    yang umumnya ada di sistem ERP:</p>
+
+                <!-- Modul Grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0;">
+
+                    <!-- Sales / CRM -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24"
+                                style="fill: var(--primary-light); flex-shrink: 0;">
+                                <path
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--primary-light);">Sales & CRM</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Mengelola prospek pelanggan
+                            (leads), penawaran harga (quotation), pesanan penjualan (sales order), hingga pelacakan
+                            kepuasan pelanggan. Modul ini menjadi ujung tombak revenue.</p>
+                    </div>
+
+                    <!-- Procurement -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                                <path
+                                    d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--accent);">Procurement (Pengadaan)</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Mengelola pembelian bahan
+                            baku/barang dari vendor. Mulai dari request pembelian, purchase order, penerimaan barang,
+                            hingga pembayaran ke supplier.</p>
+                    </div>
+
+                    <!-- Inventory -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--text-light); flex-shrink: 0;">
+                                <path
+                                    d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-5 12H9v-2h6v2zm5-7H4V4h16v3z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--text-light);">Inventory (Persediaan)</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Memantau stok barang secara
+                            real-time, mengatur gudang, menetapkan reorder point (kapan harus pesan lagi), dan mencegah
+                            overselling di marketplace.</p>
+                    </div>
+
+                    <!-- Finance -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--secondary); flex-shrink: 0;">
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--secondary);">Finance & Accounting</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Otomatis membuat jurnal
+                            akuntansi saat transaksi terjadi. Mengelola hutang-piutang, arus kas, anggaran, dan
+                            menghasilkan laporan keuangan (laba rugi, neraca).</p>
+                    </div>
+
+                    <!-- HR -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24"
+                                style="fill: var(--primary-light); flex-shrink: 0;">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--primary-light);">HRM (SDM & Payroll)</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Mengelola data karyawan,
+                            absensi, cuti, penggajian (payroll), hingga evaluasi kinerja. Semua terintegrasi dengan
+                            modul keuangan secara otomatis.</p>
+                    </div>
+
+                    <!-- Reporting -->
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                            <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-5h2v5zm4 0h-2v-3h2v3zm0-5h-2v-2h2v2zm4 5h-2V7h2v10z" />
+                            </svg>
+                            <h4 style="margin: 0; color: var(--accent);">Reporting & Analytics</h4>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Dashboard interaktif yang
+                            menampilkan KPI bisnis: total penjualan, margin, stok minimum, performa tim. Data bisa
+                            difilter per periode, divisi, atau produk.</p>
+                    </div>
+                </div>
+
+                <div class="card glass" style="margin-top: 20px;">
+                    <p style="margin: 0; font-size: 0.95rem;"><strong>Poin penting:</strong> Kekuatan ERP bukan di
+                        modulnya satu per satu, tapi di <em>koneksi antar modul</em>. Ketika Sales membuat Sales Order,
+                        maka Inventory langsung memotong stok, Finance otomatis membuat invoice, dan Reporting langsung
+                        memperbarui dashboard — semua tanpa input manual ulang.</p>
+                </div>
+            </section>
+
+            <!-- SECTION 5: Perbandingan -->
+            <section class="materi-section">
+                <h2>5. Perbandingan: On-Premise vs Cloud ERP</h2>
+                <p>Saat memilih ERP, bisnis harus memutuskan apakah akan menggunakan versi yang diinstal di server
+                    sendiri (<em>on-premise</em>) atau versi yang diakses via internet (<em>cloud / SaaS</em>).</p>
+                <div class="table-container card glass" style="overflow-x: auto; padding: 20px;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--glass-border);">
+                                <th style="padding: 14px 12px;">Aspek</th>
+                                <th style="padding: 14px 12px;">On-Premise</th>
+                                <th style="padding: 14px 12px;">Cloud / SaaS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Biaya Awal</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Sangat besar (server, lisensi, tim
+                                    IT)</td>
+                                <td style="padding: 12px; color: var(--accent);">Rendah (bulanan/tahunan)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Kontrol Data</td>
+                                <td style="padding: 12px; color: var(--accent);">Penuh di internal</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Di server vendor</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Update & Maintenance</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Manual oleh tim IT</td>
+                                <td style="padding: 12px; color: var(--accent);">Otomatis oleh vendor</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Akses</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Hanya di kantor / VPN</td>
+                                <td style="padding: 12px; color: var(--accent);">Dari mana saja via browser</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; font-weight: 600;">Cocok Untuk</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Perusahaan besar, regulasi ketat
+                                </td>
+                                <td style="padding: 12px; color: var(--accent);">UMKM, startup, bisnis digital</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 6: Alur Integrasi -->
+            <section class="materi-section">
+                <h2>6. Bagaimana Data Mengalir di ERP? (Contoh Nyata)</h2>
+                <p>Bayangkan Anda memiliki toko online yang menjual sepatu. Seorang pelanggan memesan 2 pasang sepatu
+                    dari website Anda. Inilah yang terjadi <strong>secara otomatis</strong> di dalam ERP:</p>
+
+                <div class="flow-chart"
+                    style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 20px; border: 1px dashed var(--glass-border); margin: 24px 0;">
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px;">
+                        <div class="badge" style="padding: 12px 18px; border-radius: 10px;">Pelanggan Order</div>
+                        <span style="color: var(--text-muted);">→</span>
+                        <div class="badge" style="padding: 12px 18px; border-radius: 10px;">Sales Order Dibuat</div>
+                        <span style="color: var(--text-muted);">→</span>
+                        <div class="badge-accent" style="padding: 12px 18px; border-radius: 10px;">Stok -2</div>
+                        <span style="color: var(--text-muted);">→</span>
+                        <div class="badge" style="padding: 12px 18px; border-radius: 10px;">Invoice Terbit</div>
+                        <span style="color: var(--text-muted);">→</span>
+                        <div class="badge-accent" style="padding: 12px 18px; border-radius: 10px;">Packing & Kirim</div>
+                    </div>
+                </div>
+
+                <p>Setiap langkah di atas melibatkan modul yang berbeda (Sales → Inventory → Finance → Warehouse) —
+                    tetapi karena terintegrasi dalam ERP, semuanya terjadi <strong>tanpa input manual ulang</strong>.
+                    Admin tidak perlu buka Excel, lalu catat di buku stok, lalu buat invoice terpisah.</p>
+
+                <div class="card glass" style="margin: 24px 0;">
+                    <p style="margin: 0; font-size: 0.95rem;"><strong>Bandingkan:</strong> Tanpa ERP, proses di atas
+                        bisa memerlukan 4 aplikasi berbeda (WhatsApp untuk order, Excel untuk stok, Word untuk invoice,
+                        email untuk pengiriman). Data mudah tidak sinkron dan rawan kesalahan.</p>
+                </div>
+            </section>
+
+            <!-- SECTION 7: Platform ERP -->
+            <section class="materi-section">
+                <h2>7. Contoh Platform ERP Populer</h2>
+                <p>Berikut adalah beberapa platform ERP yang banyak digunakan di industri. Perlu diingat: tidak ada ERP
+                    yang "paling baik" — yang ada adalah ERP yang <em>paling cocok</em> untuk kebutuhan bisnis tertentu.
+                </p>
+
+                <div class="table-container card glass" style="overflow-x: auto; padding: 20px;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--glass-border);">
+                                <th style="padding: 14px 12px;">Platform</th>
+                                <th style="padding: 14px 12px;">Tipe</th>
+                                <th style="padding: 14px 12px;">Cocok Untuk</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">SAP S/4HANA</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Enterprise (Cloud/On-Prem)</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Korporasi besar multinasional</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Oracle NetSuite</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Cloud SaaS</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Menengah ke atas</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600;">Microsoft Dynamics 365</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Cloud SaaS</td>
+                                <td style="padding: 12px; color: var(--text-muted);">Menengah, ekosistem Microsoft</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 12px; font-weight: 600; color: var(--accent);">Odoo</td>
+                                <td style="padding: 12px; color: var(--accent);">Open Source / Cloud</td>
+                                <td style="padding: 12px; color: var(--accent);">UMKM, startup, bisnis digital</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; font-weight: 600; color: var(--accent);">ERPNext</td>
+                                <td style="padding: 12px; color: var(--accent);">Open Source (gratis)</td>
+                                <td style="padding: 12px; color: var(--accent);">UMKM, pendidikan, NGO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 8: Takeaway -->
+            <section class="materi-section">
+                <h2>8. Rangkuman & Poin Kunci</h2>
+                <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        <p style="margin: 0;">ERP adalah <strong>sistem terintegrasi</strong>, bukan aplikasi tunggal.
+                            Ia menyatukan semua proses bisnis agar data mengalir otomatis tanpa input manual berulang.
+                        </p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        <p style="margin: 0;">Modul utama ERP meliputi <strong>Sales, Procurement, Inventory, Finance,
+                                HRM, dan Reporting</strong>. Kekuatannya ada di koneksi antar modul.</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        <p style="margin: 0;">Cloud ERP (SaaS) memungkinkan <strong>UMKM dan startup</strong> mengadopsi
+                            ERP dengan biaya terjangkau dan tanpa infrastruktur server sendiri.</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                        </svg>
+                        <p style="margin: 0;">Untuk bisnis digital, ERP menjadi <strong>fondasi operasional</strong>
+                            yang memungkinkan integrasi website, marketplace, POS, dan sistem keuangan dalam satu
+                            platform.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 9: Diskusi -->
+            <section class="materi-section">
+                <h2>9. Pertanyaan Diskusi</h2>
+                <p>Coba pikirkan dan jawab pertanyaan-pertanyaan berikut untuk melatih pemahaman Anda:</p>
+                <div class="card glass" style="padding: 24px;">
+                    <ol
+                        style="padding-left: 1.2rem; display: flex; flex-direction: column; gap: 16px; color: var(--text-muted);">
+                        <li>Sebutkan 3 masalah operasional yang sering terjadi jika setiap divisi menggunakan aplikasi
+                            yang berbeda-beda.</li>
+                        <li>Menurut Anda, modul ERP mana yang paling penting untuk sebuah toko online? Mengapa?</li>
+                        <li>Jika Anda diminta memilih antara On-Premise dan Cloud ERP untuk sebuah startup baru, mana
+                            yang Anda pilih? Jelaskan alasannya.</li>
+                        <li>Apa perbedaan utama antara ERP dan sekadar menggunakan spreadsheet (Excel/Google Sheets)
+                            untuk mengelola bisnis?</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <div class="next-steps text-center"
+                style="margin-top: 4rem; padding: 60px; border-radius: 30px; background: linear-gradient(to bottom, var(--bg-card), transparent);">
+                <h3 style="font-size: 2rem;">Selesai Membaca Materi</h3>
+                <p style="margin-bottom: 30px;">Pastikan Anda mencatat kehadiran dan tuliskan feedback singkat tentang
+                    materi hari ini.</p>
+                <a href="absensi.html" class="btn btn-primary btn-lg" style="margin-right: 15px;">Isi Absensi</a>
+                <a href="index.html#curriculum" class="btn btn-outline btn-lg">Lihat Silabus</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-nav glass">
+        <a href="index.html" class="mobile-nav-item">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="index.html#curriculum" class="mobile-nav-item active">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+            </svg>
+            <span>Materi</span>
+        </a>
+        <a href="absensi.html" class="mobile-nav-item">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path
+                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+            </svg>
+            <span>Absensi</span>
+        </a>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
