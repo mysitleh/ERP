@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 9: Siklus Implementasi ERP | ERP Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.animate-up, .animate-fade { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+
+<body class="bg-dark text-light">
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo"><span class="gradient-text">ERP</span> Portal<span class="logo-dot"></span></a>
+            <div class="nav-links desktop-only">
+                <a href="index.html" class="nav-item">Silabus</a>
+                <a href="absensi.html" class="nav-btn">Absensi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="materi-hero text-center animate-up">
+            <span class="badge">Pertemuan 09</span>
+            <h1 style="font-size: 3.5rem; margin: 1.5rem 0; line-height: 1.1;">Siklus Implementasi<br><span class="gradient-text">ERP</span></h1>
+            <p class="subtitle" style="margin: 0 auto; max-width: 700px; font-size: 1.2rem;">ERP bukan sekadar instalasi software — ini adalah proyek transformasi proses bisnis yang membutuhkan perencanaan matang dan manajemen perubahan yang baik.</p>
+        </div>
+
+        <article class="article-content animate-up delay-1">
+
+            <!-- SECTION 1 -->
+            <section class="materi-section">
+                <h2>1. Mengapa Implementasi ERP Sering Gagal?</h2>
+                <p>Statistik global menunjukkan bahwa sekitar <strong>50-75% proyek implementasi ERP</strong> mengalami keterlambatan, pembengkakan biaya, atau tidak mencapai tujuan yang diharapkan. Memahami penyebab kegagalan adalah langkah pertama menuju keberhasilan.</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px; border-color: rgba(239, 68, 68, 0.3);">
+                        <h4 style="color: #f87171; margin-bottom: 8px;">❌ Faktor Kegagalan Umum</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Kurangnya dukungan manajemen puncak</li>
+                            <li>Proses bisnis belum terdokumentasi</li>
+                            <li>Data master yang kotor/tidak akurat</li>
+                            <li>Resistensi pengguna terhadap perubahan</li>
+                            <li>Kustomisasi berlebihan</li>
+                            <li>Training yang tidak memadai</li>
+                            <li>Ekspektasi yang tidak realistis</li>
+                        </ul>
+                    </div>
+                    <div class="card glass" style="padding: 20px; border-color: rgba(16, 185, 129, 0.3);">
+                        <h4 style="color: var(--accent); margin-bottom: 8px;">✅ Faktor Keberhasilan</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Komitmen kuat dari manajemen puncak</li>
+                            <li>Proses bisnis yang sudah terdokumentasi</li>
+                            <li>Data master yang bersih dan lengkap</li>
+                            <li>Change management yang terencana</li>
+                            <li>Implementasi bertahap (phased)</li>
+                            <li>Training intensif untuk semua user</li>
+                            <li>Ekspektasi yang realistis dan terukur</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: Tahapan Implementasi -->
+            <section class="materi-section">
+                <h2>2. Tahapan Implementasi ERP</h2>
+                <p>Implementasi ERP yang sukses mengikuti siklus yang terstruktur. Berikut adalah tahapan standar yang digunakan oleh sebagian besar konsultan ERP:</p>
+
+                <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">01</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Inisiasi & Perencanaan</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Mendefinisikan tujuan proyek, ruang lingkup, anggaran, dan timeline. Membentuk tim proyek dari internal dan konsultan/vendor.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Output:</strong> Project Charter, Scope Document, Project Plan, Team Structure</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">02</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Requirement Gathering & Process Mapping</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Mendokumentasikan proses bisnis saat ini (As-Is) dan proses yang diinginkan (To-Be). Mengidentifikasi kebutuhan spesifik setiap departemen.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Output:</strong> Business Requirements Document, Process Flow Diagrams, Fit-Gap Analysis</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">03</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Konfigurasi & Kustomisasi</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Mengkonfigurasi sistem ERP sesuai kebutuhan bisnis. Kustomisasi dilakukan hanya untuk kebutuhan yang benar-benar tidak bisa dipenuhi oleh fitur standar.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Prinsip:</strong> "Configure, don't customize" — gunakan fitur standar sebisa mungkin untuk mengurangi kompleksitas dan biaya maintenance.</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">04</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Migrasi Data</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Memindahkan data dari sistem lama ke ERP baru. Ini adalah tahap yang paling kritis dan sering memakan waktu paling lama.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Langkah:</strong> Extract data lama → Cleansing & validasi → Transform ke format baru → Load ke ERP → Verifikasi</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">05</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Testing (UAT)</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;"><strong>User Acceptance Testing (UAT)</strong> — pengguna akhir menguji sistem dengan skenario bisnis nyata untuk memastikan semua fungsi berjalan sesuai harapan.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Jenis testing:</strong> Unit testing, Integration testing, Performance testing, UAT</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">06</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Training</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Melatih semua pengguna sistem sesuai peran mereka. Training yang baik adalah investasi terpenting dalam implementasi ERP.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Pendekatan:</strong> Train-the-trainer (latih superuser, superuser latih tim), role-based training, user manual & video tutorial</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px; border-color: rgba(16, 185, 129, 0.3);">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">07</div>
+                            <h4 style="margin: 0; color: var(--accent);">Go-Live</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Sistem ERP mulai digunakan secara resmi. Biasanya ada periode <strong>parallel run</strong> di mana sistem lama dan baru berjalan bersamaan untuk memastikan tidak ada data yang hilang.</p>
+                        <div style="padding: 10px 14px; background: rgba(16, 185, 129, 0.1); border-radius: 8px;">
+                            <p style="color: var(--accent); font-size: 0.85rem; margin: 0;"><strong>Kunci sukses go-live:</strong> Hypercare support (tim siaga 24/7 di minggu pertama), rollback plan jika ada masalah kritis.</p>
+                        </div>
+                    </div>
+
+                    <div class="card glass" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="background: rgba(99, 102, 241, 0.3); color: var(--primary-light); width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; font-size: 0.9rem;">08</div>
+                            <h4 style="margin: 0; color: var(--primary-light);">Post Go-Live Support & Continuous Improvement</h4>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 8px;">Implementasi ERP tidak berakhir di go-live. Fase ini mencakup dukungan teknis, perbaikan bug, optimasi proses, dan penambahan fitur baru secara bertahap.</p>
+                        <div style="padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Mindset:</strong> ERP adalah perjalanan, bukan tujuan. Bisnis terus berkembang, sistem harus terus dioptimalkan.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Stakeholder -->
+            <section class="materi-section">
+                <h2>3. Peran Stakeholder dalam Implementasi ERP</h2>
+                <p>Keberhasilan implementasi ERP sangat bergantung pada keterlibatan dan komitmen semua pihak yang terlibat:</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">👔 Manajemen Puncak</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Memberikan dukungan dan komitmen penuh</li>
+                            <li>Menyetujui anggaran dan sumber daya</li>
+                            <li>Menyelesaikan konflik antar departemen</li>
+                            <li>Menjadi "champion" perubahan</li>
+                        </ul>
+                    </div>
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">👥 Key Users / Superusers</h4>

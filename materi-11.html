@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11: Integrasi ERP dengan Sistem Digital | ERP Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.animate-up, .animate-fade { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+
+<body class="bg-dark text-light">
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo"><span class="gradient-text">ERP</span> Portal<span class="logo-dot"></span></a>
+            <div class="nav-links desktop-only">
+                <a href="index.html" class="nav-item">Silabus</a>
+                <a href="absensi.html" class="nav-btn">Absensi</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="materi-hero text-center animate-up">
+            <span class="badge">Pertemuan 11</span>
+            <h1 style="font-size: 3.5rem; margin: 1.5rem 0; line-height: 1.1;">Integrasi ERP dengan<br><span class="gradient-text">Sistem Digital Lain</span></h1>
+            <p class="subtitle" style="margin: 0 auto; max-width: 700px; font-size: 1.2rem;">ERP dalam ekosistem bisnis digital multi-platform: e-commerce, payment gateway, CRM, BI, dan konsep API/middleware.</p>
+        </div>
+
+        <article class="article-content animate-up delay-1">
+
+            <!-- SECTION 1 -->
+            <section class="materi-section">
+                <h2>1. ERP sebagai Pusat Ekosistem Digital</h2>
+                <p>Bisnis digital modern tidak hanya menggunakan ERP — mereka menggunakan ekosistem sistem yang saling terhubung. ERP berperan sebagai <strong>"hub" atau pusat data</strong> yang menghubungkan semua sistem tersebut.</p>
+
+                <div class="card glass" style="padding: 28px; margin: 24px 0;">
+                    <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center;">
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="padding: 10px 16px; background: rgba(99, 102, 241, 0.15); border-radius: 8px; text-align: center; color: var(--primary-light); font-size: 0.85rem; font-weight: 600;">🛒 E-Commerce / Marketplace</div>
+                            <div style="padding: 10px 16px; background: rgba(16, 185, 129, 0.15); border-radius: 8px; text-align: center; color: var(--accent); font-size: 0.85rem; font-weight: 600;">💳 Payment Gateway</div>
+                            <div style="padding: 10px 16px; background: rgba(236, 72, 153, 0.15); border-radius: 8px; text-align: center; color: var(--secondary); font-size: 0.85rem; font-weight: 600;">📊 BI / Dashboard</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); padding: 20px; border-radius: 16px; color: white; font-weight: 700; font-size: 1.1rem; box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);">ERP<br><span style="font-size: 0.75rem; font-weight: 400; opacity: 0.8;">Pusat Data</span></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div style="padding: 10px 16px; background: rgba(99, 102, 241, 0.15); border-radius: 8px; text-align: center; color: var(--primary-light); font-size: 0.85rem; font-weight: 600;">📱 CRM / Marketing Tools</div>
+                            <div style="padding: 10px 16px; background: rgba(16, 185, 129, 0.15); border-radius: 8px; text-align: center; color: var(--accent); font-size: 0.85rem; font-weight: 600;">🏪 POS (Toko Fisik)</div>
+                            <div style="padding: 10px 16px; background: rgba(236, 72, 153, 0.15); border-radius: 8px; text-align: center; color: var(--secondary); font-size: 0.85rem; font-weight: 600;">🚚 Logistik / Kurir</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: Integrasi E-Commerce -->
+            <section class="materi-section">
+                <h2>2. ERP + E-Commerce / Marketplace</h2>
+                <p>Integrasi ERP dengan platform e-commerce adalah salah satu kebutuhan paling umum untuk bisnis digital Indonesia. Berikut data yang perlu disinkronkan:</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">📤 Dari ERP ke Marketplace</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Update stok produk real-time</li>
+                            <li>Update harga produk</li>
+                            <li>Informasi produk (nama, deskripsi, foto)</li>
+                            <li>Status pengiriman order</li>
+                        </ul>
+                    </div>
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">📥 Dari Marketplace ke ERP</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Order baru → Sales Order di ERP</li>
+                            <li>Data pelanggan → Customer Master</li>
+                            <li>Konfirmasi pembayaran</li>
+                            <li>Return/refund request</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card glass" style="margin: 20px 0; background: rgba(99, 102, 241, 0.05);">
+                    <p style="margin: 0; font-size: 0.95rem;"><strong>Manfaat nyata:</strong> Tanpa integrasi, admin harus secara manual memindahkan order dari Tokopedia ke sistem ERP — proses yang memakan waktu dan rawan kesalahan. Dengan integrasi, order masuk otomatis dalam hitungan detik.</p>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Payment Gateway -->
+            <section class="materi-section">
+                <h2>3. ERP + Payment Gateway</h2>
+                <p>Integrasi dengan payment gateway memungkinkan konfirmasi pembayaran otomatis tanpa perlu cek manual transfer bank:</p>
+
+                <div style="display: flex; flex-direction: column; gap: 12px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 16px; align-items: center;">
+                        <div style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 10px; font-size: 1.2rem; flex-shrink: 0;">1</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Pelanggan melakukan pembayaran via Midtrans/Xendit/DOKU</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 16px; align-items: center;">
+                        <div style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 10px; font-size: 1.2rem; flex-shrink: 0;">2</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Payment gateway mengirim notifikasi (webhook) ke ERP bahwa pembayaran berhasil</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 16px; align-items: center;">
+                        <div style="background: rgba(16, 185, 129, 0.2); padding: 10px; border-radius: 10px; font-size: 1.2rem; flex-shrink: 0;">3</div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">ERP otomatis menutup invoice, mencatat penerimaan kas, dan memicu proses pengiriman</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 16px; align-items: center; border-color: rgba(16, 185, 129, 0.3);">
+                        <div style="background: var(--accent); padding: 10px; border-radius: 10px; font-size: 1.2rem; flex-shrink: 0; color: white;">✓</div>
+                        <p style="color: var(--accent); font-size: 0.9rem; margin: 0;">Tidak ada konfirmasi manual. Laporan keuangan terupdate real-time.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: API & Middleware -->
+            <section class="materi-section">
+                <h2>4. Konsep API & Middleware (Bahasa Sederhana)</h2>
+                <p>Bagaimana sistem-sistem yang berbeda bisa "berbicara" satu sama lain? Jawabannya adalah <strong>API</strong> dan <strong>Middleware</strong>.</p>
+
+                <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">🔌 API (Application Programming Interface)</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">API adalah "pintu" yang disediakan oleh sebuah sistem agar sistem lain bisa mengambil atau mengirim data kepadanya.</p>
+                        <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Analogi:</strong> API seperti menu di restoran. Anda (sistem lain) tidak perlu masuk ke dapur (sistem ERP) — cukup pesan dari menu (API), dan dapur akan menyiapkan pesanan Anda.</p>
+                        </div>
+                    </div>
+                    <div class="card glass" style="padding: 24px;">
+                        <h4 style="color: var(--primary-light); margin-bottom: 12px;">🔄 Middleware / Integration Platform</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">Middleware adalah "penerjemah" yang menghubungkan dua sistem yang berbeda format datanya. Contoh: Zapier, Make (Integromat), atau custom middleware.</p>
+                        <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;"><strong>Contoh:</strong> Order dari Tokopedia (format JSON Tokopedia) → Middleware mengubah format → ERP menerima data dalam format yang dipahaminya.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass" style="margin: 20px 0;">
+                    <h4 style="color: var(--text-light); margin-bottom: 12px;">⚠️ Tantangan Integrasi</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <div>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 4px;"><strong style="color: #f87171;">Data Consistency:</strong></p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Bagaimana memastikan data di semua sistem selalu sinkron dan konsisten?</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 4px;"><strong style="color: #f87171;">Latency:</strong></p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Ada jeda waktu antara transaksi terjadi dan data tersinkronisasi. Berapa toleransi jeda yang bisa diterima?</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 4px;"><strong style="color: #f87171;">Error Handling:</strong></p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Apa yang terjadi jika integrasi gagal? Bagaimana mendeteksi dan menangani error?</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 4px;"><strong style="color: #f87171;">Maintenance:</strong></p>
+                            <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Jika salah satu sistem diupdate, integrasi bisa rusak dan perlu diperbaiki.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: ERP + BI -->
+            <section class="materi-section">
+                <h2>5. ERP + BI / Dashboard Analytics</h2>
+                <p>ERP menyimpan data operasional yang sangat kaya. Dengan menghubungkan ERP ke tools Business Intelligence (BI), bisnis bisa mendapatkan insight yang lebih dalam:</p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px;">
+                        <h4 style="color: var(--accent); margin-bottom: 8px;">📊 Contoh Insight dari ERP + BI</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li>Produk mana yang paling profitable (bukan hanya paling laku)</li>
+                            <li>Pelanggan mana yang paling bernilai (CLV tinggi)</li>
+                            <li>Tren penjualan per musim/periode</li>
+                            <li>Prediksi kebutuhan stok bulan depan</li>
+                            <li>Vendor mana yang paling sering terlambat</li>
+                        </ul>
+                    </div>
+                    <div class="card glass" style="padding: 20px;">
+                        <h4 style="color: var(--accent); margin-bottom: 8px;">🛠️ Tools BI yang Umum Digunakan</h4>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                            <li><strong style="color: var(--text-light);">Power BI</strong> — Microsoft, populer di enterprise</li>
+                            <li><strong style="color: var(--text-light);">Tableau</strong> — Visualisasi data canggih</li>
+                            <li><strong style="color: var(--text-light);">Metabase</strong> — Open source, mudah digunakan</li>
+                            <li><strong style="color: var(--text-light);">Looker Studio</strong> — Google, gratis</li>
+                            <li><strong style="color: var(--text-light);">Built-in ERP</strong> — Dashboard bawaan Odoo/ERPNext</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: Rangkuman -->
+            <section class="materi-section">
+                <h2>6. Rangkuman & Poin Kunci</h2>
+                <div style="display: flex; flex-direction: column; gap: 16px; margin: 24px 0;">
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                        <p style="margin: 0;">ERP berperan sebagai <strong>pusat data (hub)</strong> dalam ekosistem digital bisnis, menghubungkan e-commerce, payment gateway, CRM, POS, dan BI.</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                        <p style="margin: 0;"><strong>API</strong> adalah "pintu" komunikasi antar sistem. <strong>Middleware</strong> adalah "penerjemah" yang menghubungkan sistem dengan format data berbeda.</p>
+                    </div>
+                    <div class="card glass" style="padding: 20px; display: flex; gap: 14px; align-items: start;">
+                        <svg class="icon-lg" viewBox="0 0 24 24" style="fill: var(--accent); flex-shrink: 0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" /></svg>
+                        <p style="margin: 0;">Tantangan integrasi: data consistency, latency, error handling, dan maintenance. Perlu direncanakan dengan matang sebelum implementasi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div style="display: flex; justify-content: space-between; margin-top: 48px; gap: 16px; flex-wrap: wrap;">
+                <a href="materi-10.html" class="btn btn-outline">← Pertemuan 10: Requirement & Fit-Gap</a>
+                <a href="materi-12.html" class="btn btn-primary">Pertemuan 12: Keamanan & Tata Kelola →</a>
+            </div>
+        </article>
+    </main>
+
+    <div class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item"><svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /></svg><span>Home</span></a>
+        <a href="index.html#curriculum" class="mobile-nav-item active"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" /></svg><span>Materi</span></a>
+        <a href="absensi.html" class="mobile-nav-item"><svg class="icon" viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" /></svg><span>Absensi</span></a>
+    </div>
+
+    <footer class="footer container">
+        <div class="footer-inner">
+            <span class="footer-brand">ERP Portal</span>
+            <div class="footer-links"><a href="index.html">Silabus</a><a href="absensi.html">Absensi</a></div>
+            <p class="footer-copy">&copy; 2026 Program Studi Bisnis Digital</p>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
